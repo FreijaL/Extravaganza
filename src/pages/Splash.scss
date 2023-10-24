@@ -1,0 +1,20 @@
+.splash__main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #93278f;
+}
+
+.splash__logo {
+    max-width: 40rem;
+    height: auto;
+}
+
+.splash__heading {
+    font-size: 60px;
+    position: absolute;
+    top: 45%;
+    color: black;
+}
