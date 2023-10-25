@@ -5,7 +5,12 @@
   text-align: center;
 } */
 
+body{
+  height: auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }

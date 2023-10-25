@@ -1,3 +1,80 @@
-.homepage__heading{
-    background-color: #93278f;
+// .homepage__wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     // justify-content: space-between;
+// }
+
+.homepage__header{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem .8rem;;
+}
+
+#extravaganza-logo {
+    width: 80px;
+    height: 80px;
+}
+
+#shopping-cart {
+    width: 30px;
+    height: 30px;
+}
+
+.homepage__main {
+    height: auto;
+}
+
+.homepage__first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#homepage__first-section-image {
+    width: 100vw;
+}
+
+.homepage__first-section-text {
+    padding: 5rem;
+}
+
+.homepage__news {
+    height: 30rem;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.homepage__news-section {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.homepage__news-section-option {
+    height: 20rem;
+    width: 15rem;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.homepage__news-section-image {
+    width: 100%;
+    height: auto;
+}
+
+.homepage__footer {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
 }
