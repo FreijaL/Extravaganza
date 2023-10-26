@@ -18,7 +18,14 @@ function HomePage() {
                 
                 <main className="homepage__main">
                     <section className="homepage__first-section">
-                        <img id="homepage__first-section-image" src="/images/karusell.jpg" alt="karusell med hästar" />
+                        <article className="homepage__first-section-scroll-container">
+                            <img className="homepage__first-section-image" src="/images/karusell.jpg" alt="karusell med hästar" />
+                            <img className="homepage__first-section-image" src="/images/angel-light.jpg" alt="decorations" />
+                            <img className="homepage__first-section-image" src="/images/waffles.jpg" alt="waffles" />
+                            <img className="homepage__first-section-image" src="/images/skiing-2.jpg" alt="skiing" />
+                            <img className="homepage__first-section-image" src="/images/food.jpg" alt="food selections" />
+                            <img className="homepage__first-section-image" src="/images/skiing.jpg" alt="old couple skiing" />
+                        </article>
                         <h2 className="homepage__first-section-text">Välkommen till en magisk upplevelse för hela familjen!</h2>
                     </section>
                     <section className="homepage__news">
@@ -26,14 +33,23 @@ function HomePage() {
                             <h2>News in the park</h2>
                         </section>
                         <section className="homepage__news-section">
-                            <section className="homepage__news-section-option">
-                                <img className="homepage__news-section-image" src="/images/julmarknad.jpg" alt="julmarknad på nöjesfältet" />
+                            <section className="homepage__news-section-card">
+                                <article className="homepage__news-section-option">
+                                    <img className="homepage__news-section-image" src="/images/julmarknad.jpg" alt="julmarknad på nöjesfältet" />
+                                </article>
+                                <h3 className="homepage__news-section-title">Julmarknad</h3>
                             </section>
-                            <section className="homepage__news-section-option">
-                                <img className="homepage__news-section-image" src="/images/jul-slott.jpg" alt="slottet i juldekoration" />
+                            <section className="homepage__news-section-card">
+                                <article className="homepage__news-section-option">
+                                    <img className="homepage__news-section-image" id="news-image-2" src="/images/jul-slott.jpg" alt="slottet i juldekoration" />
+                                </article>
+                                <h3 className="homepage__news-section-title">Extra öppet</h3>
                             </section>
-                            <section className="homepage__news-section-option">
-                                <img className="homepage__news-section-image" src="/images/fyrverkerier.jpg" alt="fyrverkerier" />
+                            <section className="homepage__news-section-card">
+                                <article className="homepage__news-section-option">
+                                    <img className="homepage__news-section-image" src="/images/fyrverkerier.jpg" alt="fyrverkerier" />
+                                </article>
+                                <h3 className="homepage__news-section-title">Fyrverkerier</h3>
                             </section>
                         </section>
                     </section>
