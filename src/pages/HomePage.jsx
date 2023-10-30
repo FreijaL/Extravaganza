@@ -17,15 +17,19 @@ function HomePage() {
                 </header>
                 
                 <main className="homepage__main">
-                    <section className="homepage__first-section">
-                        <article className="homepage__first-section-scroll-container">
-                            <img className="homepage__first-section-image" src="/images/karusell.jpg" alt="karusell med hästar" />
-                            <img className="homepage__first-section-image" src="/images/angel-light.jpg" alt="decorations" />
-                            <img className="homepage__first-section-image" src="/images/waffles.jpg" alt="waffles" />
-                            <img className="homepage__first-section-image" src="/images/skiing-2.jpg" alt="skiing" />
-                            <img className="homepage__first-section-image" src="/images/food.jpg" alt="food selections" />
-                            <img className="homepage__first-section-image" src="/images/skiing.jpg" alt="old couple skiing" />
-                        </article>
+                    <section className="homepage__first">
+                        <section className="homepage__first-section">
+                            <article className="homepage__first-section-scroll-container">
+                                <img className="homepage__first-section-image" src="/images/karusell.jpg" alt="karusell med hästar" />
+                                <img className="homepage__first-section-image" src="/images/waffles.jpg" alt="waffles" />
+                                {/* <img className="homepage__first-section-image" src="/images/skiing-2.jpg" alt="skiing" /> */}
+                                {/* <img className="homepage__first-section-image" src="/images/food.jpg" alt="food selections" /> */}
+                                {/* <img className="homepage__first-section-image" src="/images/skiing.jpg" alt="old couple skiing" /> */}
+                                <img className="homepage__first-section-image" src="/images/house.jpg" alt="house" />
+                                <img className="homepage__first-section-image" src="/images/shopping.jpg" alt="holiday shopping" />
+                                <img className="homepage__first-section-image" src="/images/train.jpg" alt="train" />
+                            </article>
+                        </section>
                         <h2 className="homepage__first-section-text">Välkommen till en magisk upplevelse för hela familjen!</h2>
                     </section>
                     <section className="homepage__news">

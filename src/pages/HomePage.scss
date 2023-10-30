@@ -24,6 +24,10 @@
     width: 100%;
 }
 
+.homepage__first {
+    text-align: center;
+}
+
 .homepage__first-section {
     display: flex;
     flex-direction: column;
@@ -34,8 +38,6 @@
 
 .homepage__first-section-scroll-container {
     display: inline-block;
-    //flex-direction: row;
-    
 }
 
 .homepage__first-section-image {
