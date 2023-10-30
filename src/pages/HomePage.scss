@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2.2rem;
-    padding: .2rem .8rem;;
+    font-size: 2.5rem;
+    padding: .2rem 1.2rem;;
 }
 
 #extravaganza-logo {
@@ -14,18 +14,31 @@
     height: 80px;
 }
 
+.homepage__heading {
+    text-shadow: 1px 5px 10px #0d0d0d;
+}
+
 #shopping-cart {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    padding: .2rem;
 }
 
 .homepage__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
     width: 100%;
 }
 
 .homepage__first {
     text-align: center;
+    width: 80%;
+}
+
+#opening-video {
+    border-radius: 2rem;
 }
 
 .homepage__first-section {
@@ -36,18 +49,25 @@
     white-space: nowrap;
 }
 
-.homepage__first-section-scroll-container {
+.homepage__first-section__scroll-container {
     display: inline-block;
 }
 
-.homepage__first-section-image {
-    width: 60vw;
-    padding: 10px;
+.homepage__first-section__image {
+    width: 49%;
+    height: 100%;
+    margin: 20px 20px 0 0;
+    border-radius: 2rem;
 }
 
-.homepage__first-section-text {
+.homepage__first-section__text {
     padding: 5rem;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(#184a60, #de3bea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 .homepage__news {
     height: 35rem;
@@ -70,21 +90,22 @@
     //padding-bottom: rem;
 }
 
-.homepage__news-section-card {
-    height: 25rem;
+.homepage__news-section__card {
+    width: 15rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.homepage__news-section-option {
+.homepage__news-section__option {
     height: 20rem;
     width: 15rem;
     overflow: hidden;
     border-radius: .5rem;
 }
 
-.homepage__news-section-image {
+.homepage__news-section__image {
     width: 100%;
     height: auto;
 }
@@ -94,10 +115,11 @@
     bottom: 60px;
 }
 
-.homepage__news-section-title {
+.homepage__news-section__title {
     position: relative;
     bottom: 180px;
     font-size: 2rem;
+    text-shadow: 0 0 8px red;
 }
 
 .homepage__footer {

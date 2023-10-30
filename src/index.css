@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Sansita:wght@400;700&display=swap');
 
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -16,7 +16,9 @@
   -webkit-text-size-adjust: 100%; */
 
   overflow-x: hidden;
-  background-color: #95140b;
-  font-family: Langar, sans-serif;
+  background:
+              radial-gradient(ellipse at left, #ad57aa, transparent),
+              radial-gradient(ellipse at right, #6dcde5, transparent);
+  font-family: Sansita, sans-serif;
 }
 

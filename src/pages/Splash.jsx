@@ -20,9 +20,9 @@ function Splash() {
                 initial= {{ rotate: 0}}
                 animate= {{ rotate: -360}}
                 transition={{ duration: 3 }}
-                className="splash__logo" src="/svg/logo.svg" />
+                className="splash__logo" src="/svg/logo-2.svg" />
             <motion.h1 
-                initial= {{scale: 6}}
+                initial= {{scale: 8}}
                 animate= {{scale: 1.5}}
                 transition={{ type: 'spring', stiffness: 250}}
                 className="splash__heading"
