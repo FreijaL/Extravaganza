@@ -7,19 +7,24 @@ import { motion } from 'framer-motion';
 function Splash() {
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     const timer = setTimeout(() => {
-    //         navigate('/home')
-    //     }, 3000)
-    //     return () => clearTimeout(timer)
-    // })
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            navigate('/home')
+        }, 3000)
+        return () => clearTimeout(timer)
+    })
 
     return ( 
         <main className="splash__main-container">
-            <img className="splash__logo" src="/svg/logo.svg" />
+            <motion.img 
+                initial= {{ rotate: 0}}
+                animate= {{ rotate: -360}}
+                transition={{ duration: 3 }}
+                className="splash__logo" src="/svg/logo.svg" />
             <motion.h1 
-                initial= {{scale: 2}}
-                animate= {{scale: 1}}
+                initial= {{scale: 6}}
+                animate= {{scale: 1.5}}
+                transition={{ type: 'spring', stiffness: 250}}
                 className="splash__heading"
             >EXTRAVAGANZA</motion.h1>
         </main>
