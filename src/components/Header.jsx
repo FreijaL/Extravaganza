@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Menu from '../components/Menu.jsx';
 import style from '../pages/HomePage.scss';
 
 function Header() {
@@ -11,7 +12,9 @@ function Header() {
 
                 id="extravaganza-logo" 
                 src="/svg/logo-2.svg" 
-                alt="extravaganza-logo" />
+                alt="extravaganza-logo" 
+            />
+            <Menu />
             <h1 className="homepage__heading">EXTRAVAGANZA</h1>
             <motion.img 
                 initinal= {{ y:0 }}
