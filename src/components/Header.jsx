@@ -5,15 +5,6 @@ import style from '../pages/HomePage.scss';
 function Header() {
     return (
         <header className="homepage__header">
-            <motion.img 
-                initial= {{ rotate: 0, scale: 1 }}
-                whileHover={{ rotate: 360, scale: 1.2, cursor: 'pointer'  }}
-                transition={{ duration: 1.25}}
-
-                id="extravaganza-logo" 
-                src="/svg/logo-2.svg" 
-                alt="extravaganza-logo" 
-            />
             <Menu />
             <h1 className="homepage__heading">EXTRAVAGANZA</h1>
             <motion.img 
