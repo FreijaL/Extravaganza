@@ -1,8 +1,40 @@
-
-
 .bookingpage__main {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5rem auto;
+}
+
+.bookingpage__wheel__container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wheel__button {
+    width: 10rem;
+    height: 3rem;
+    background-color: black;
+    color: orchid;
+    font-size: 2rem;
+    font-weight: 800;
+    border-radius: 1rem;
+    border: none;
+    font-family: Sansita;
+}
+
+@keyframes spinButton {
+    from { background-color: black; color: orchid; scale: 1;}
+    to { background-color: orchid; color: black; scale: 1.2;}
+}
+
+.wheel__button:hover {
+    animation-name: spinButton;
+    animation-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.wheel__button:active {
+    opacity: .6;
 }

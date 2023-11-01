@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { Wheel } from 'react-custom-roulette';
 import style from './BookingPage.scss';
 
@@ -31,7 +32,7 @@ function BookingPage() {
     return (
         <>
             <article className='bookingpage__wrapper'>
-                <Header />
+                <Header action={() => navigate('/home')} />
 
                 <main className='bookingpage__main'>
                     <section className='bookingpage__wheel__container'>
@@ -40,14 +41,23 @@ function BookingPage() {
                             prizeNumber={prizeNumber}
                             data={data}
                             backgroundColors={['#96d3f4', '#b296f4', 'orchid']}
+                            fontFamily='Sansita'
                             onStopSpinning={() => {
                                 setMustSpin(false);
                             }}
                         />
-                        <button onClick={handleSpinClick}>SPIN</button>
+                        <button 
+                            className='wheel__button'
+                            onClick={handleSpinClick}
+                        >
+                            SPIN
+                        </button>
                     </section>
                 </main>
+
             </article>
+
+            <Footer />
         </>
     )
 

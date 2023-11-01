@@ -15,7 +15,7 @@ function Menu({action}) {
         },
         whileHover: {
             scale: 1.15,
-            textShadow: '0 0 5px blue',
+            textShadow: '0 0 4px orchid',
             cursor: 'pointer'
         },
         whileTap: {
@@ -61,7 +61,7 @@ function Menu({action}) {
 
                             className='menu__list__option'
                         >
-                            Boka ditt besök
+                            Book your visit
                         </motion.li>
                         <motion.li 
                             variants={hoverMenuOptions}
@@ -71,7 +71,7 @@ function Menu({action}) {
 
                             className='menu__list__option'
                         >
-                            Evenemang
+                            Opening hours
                         </motion.li>
                         <motion.li 
                             variants={hoverMenuOptions}
@@ -81,7 +81,7 @@ function Menu({action}) {
 
                             className='menu__list__option'
                             >
-                                Öppettider
+                                Events
                         </motion.li>
                         <motion.li 
                             variants={hoverMenuOptions}
@@ -91,7 +91,7 @@ function Menu({action}) {
 
                             className='menu__list__option'
                             >
-                                Kontakt
+                                Contact
                         </motion.li>
                         <motion.li 
                             variants={hoverMenuOptions}

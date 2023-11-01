@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
 import style from './homepage.scss';
 import { motion } from 'framer-motion';
 
@@ -27,7 +28,7 @@ function HomePage() {
     return (
         <>
             <article className="homepage__wrapper">
-                < Header />
+                < Header action={() => navigate('/home')} />
                 
                 <main className="homepage__main">
 
@@ -106,11 +107,12 @@ function HomePage() {
                     </section>
                 </main>
 
-                <footer className="homepage__footer">
+                <Footer />
+                {/* <footer className="homepage__footer">
                         <p>Contact: freijalindkvist@hotmail.com</p>
                         <p>&copy; Copyrights 2023 by Freija Lindkvist </p>
                         <p>Examination UX/UI</p>
-                </footer>
+                </footer> */}
             </article>
         </>
     )
