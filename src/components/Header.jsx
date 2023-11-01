@@ -1,11 +1,15 @@
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import Menu from '../components/Menu.jsx';
 import style from '../pages/HomePage.scss';
 
 function Header() {
+
+    const navigate = useNavigate();
+
     return (
         <header className="homepage__header">
-            <Menu />
+            <Menu action={() => navigate('/booking')} />
             <h1 className="homepage__heading">EXTRAVAGANZA</h1>
             <motion.img 
                 initinal= {{ y:0 }}

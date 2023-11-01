@@ -1,6 +1,8 @@
 
 
-.bookingpage__wrapper {
-    width: auto;
-    height: auto;
+.bookingpage__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

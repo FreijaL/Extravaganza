@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import style from '../pages/HomePage.scss';
 
-function Menu() {
+function Menu({action}) {
 
+    //const navigate = useNavigate;
     const [showMenu, setShowMenu] = useState(false);
 
 
@@ -55,7 +57,11 @@ function Menu() {
                             whileHover='whileHover'
                             whileTap='whileTap'
 
-                            className='menu__list__option'>Boka ditt besök
+                            onClick={action}
+
+                            className='menu__list__option'
+                        >
+                            Boka ditt besök
                         </motion.li>
                         <motion.li 
                             variants={hoverMenuOptions}
@@ -63,7 +69,9 @@ function Menu() {
                             whileHover='whileHover'
                             whileTap='whileTap'
 
-                            className='menu__list__option'>Evenemang
+                            className='menu__list__option'
+                        >
+                            Evenemang
                         </motion.li>
                         <motion.li 
                             variants={hoverMenuOptions}
@@ -71,7 +79,9 @@ function Menu() {
                             whileHover='whileHover'
                             whileTap='whileTap'
 
-                            className='menu__list__option'>Öppettider
+                            className='menu__list__option'
+                            >
+                                Öppettider
                         </motion.li>
                         <motion.li 
                             variants={hoverMenuOptions}
@@ -79,7 +89,9 @@ function Menu() {
                             whileHover='whileHover'
                             whileTap='whileTap'
 
-                            className='menu__list__option'>Kontakt
+                            className='menu__list__option'
+                            >
+                                Kontakt
                         </motion.li>
                         <motion.li 
                             variants={hoverMenuOptions}
@@ -87,7 +99,9 @@ function Menu() {
                             whileHover='whileHover'
                             whileTap='whileTap'
 
-                            className='menu__list__option'>FAQ
+                            className='menu__list__option'
+                            >
+                                FAQ
                         </motion.li>
                     </ul>
                 </motion.nav>
