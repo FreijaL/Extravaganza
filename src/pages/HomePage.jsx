@@ -69,7 +69,7 @@ function HomePage() {
                                 >
                                     <img className="homepage__news-section__image" src="/images/julmarknad.jpg" alt="julmarknad på nöjesfältet" />
                                 </motion.article>
-                                <h3 className="homepage__news-section__title">Julmarknad</h3>
+                                <h3 className="homepage__news-section__title">Christmas market</h3>
                             </motion.section>
                             <motion.section 
                                 variants={hoverCard}
@@ -86,7 +86,7 @@ function HomePage() {
                                 >
                                     <img className="homepage__news-section__image" id="news-image-2" src="/images/jul-slott.jpg" alt="slottet i juldekoration" />
                                 </motion.article>
-                                <h3 className="homepage__news-section__title">Extra öppet</h3>
+                                <h3 className="homepage__news-section__title">Extra opening hours</h3>
                             </motion.section>
                             <motion.section
                                 variants={hoverCard}
@@ -101,18 +101,14 @@ function HomePage() {
                                     className="homepage__news-section__option">
                                     <img className="homepage__news-section__image" src="/images/fyrverkerier.jpg" alt="fyrverkerier" />
                                 </motion.article>
-                                <h3 className="homepage__news-section__title">Fyrverkerier</h3>
+                                <h3 className="homepage__news-section__title">Fireworks</h3>
                             </motion.section>
                         </section>
                     </section>
                 </main>
 
                 <Footer />
-                {/* <footer className="homepage__footer">
-                        <p>Contact: freijalindkvist@hotmail.com</p>
-                        <p>&copy; Copyrights 2023 by Freija Lindkvist </p>
-                        <p>Examination UX/UI</p>
-                </footer> */}
+    
             </article>
         </>
     )

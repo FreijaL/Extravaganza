@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ModalPrize from '../components/ModalPrize';
+import Button from '../components/Button';
 import { Wheel } from 'react-custom-roulette';
 import style from './BookingPage.scss';
 
@@ -53,6 +55,7 @@ function BookingPage() {
                             SPIN
                         </button>
                     </section>
+                    <ModalPrize />
                 </main>
 
             </article>

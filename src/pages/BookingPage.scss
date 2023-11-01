@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .wheel__button {
@@ -37,4 +38,15 @@
 
 .wheel__button:active {
     opacity: .6;
+}
+
+.modal {
+    width: 40%;
+    height: 40%;
+}
+
+.modal__button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: .8rem;
 }
