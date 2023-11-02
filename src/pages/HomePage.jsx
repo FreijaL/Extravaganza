@@ -47,7 +47,7 @@ function HomePage() {
                                 <img className="homepage__first-section__image" src="/images/train.jpg" alt="train" />
                             </article>
                         </section>
-                        <h2 className="homepage__first-section__text">Välkommen till en magisk upplevelse för hela familjen!</h2>
+                        <h2 className="homepage__first-section__text">Welcome to us for a magical experience for the whole family!</h2>
                     </section>
                     <section className="homepage__news">
                         <section>

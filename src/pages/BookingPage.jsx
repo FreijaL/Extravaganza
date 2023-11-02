@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useNavigate} from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ModalPrize from '../components/ModalPrize';
@@ -11,6 +11,7 @@ import style from './BookingPage.scss';
 function BookingPage() {
     const navigate = useNavigate();
 
+
     const data = [
         { option: '10%'},
         { option: '15%'},
@@ -19,6 +20,8 @@ function BookingPage() {
         { option: '10%'},
         { option: '15%'},
     ]
+
+    const [showModal, setShowModal] = useState(false)
 
     const [mustSpin, setMustSpin] = useState(false);
     const [prizeNumber, setPrizeNumber] = useState(0);
@@ -31,13 +34,28 @@ function BookingPage() {
         }
     }
 
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowModal(true)
+        }, 11000 )
+        return () => clearTimeout(timer)
+    });
+
+
+
     return (
         <>
             <article className='bookingpage__wrapper'>
                 <Header action={() => navigate('/home')} />
 
                 <main className='bookingpage__main'>
-                    <section className='bookingpage__wheel__container'>
+                    <motion.section 
+                        initial={{ opacity: 1}}
+                        animate={{ opacity: .2}}
+                        transition={{ delay: 11.5}}
+                        className='bookingpage__wheel__container'
+                    >
                         <Wheel 
                             mustStartSpinning={mustSpin}
                             prizeNumber={prizeNumber}
@@ -54,9 +72,18 @@ function BookingPage() {
                         >
                             SPIN
                         </button>
-                    </section>
-                    <ModalPrize />
+                    </motion.section>
+                    {
+                        showModal
+                        ?
+                        <ModalPrize />
+                        :
+                        ''
+                    }
                 </main>
+                <aside>
+                    <h4>Här kommer det vara bokningsalternativ</h4>
+                </aside>
 
             </article>
 
