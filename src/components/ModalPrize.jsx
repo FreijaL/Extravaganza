@@ -23,8 +23,20 @@ function ModalPrize() {
             ?
             <article className='modal'>
                 <section className='modal__text-section'>
-                    <h2>Congratulations!</h2>
-                    <h3>You won 10% off original prize</h3>
+                    <motion.h2
+                        initial={{opacity: 0}}
+                        animate={{ opacity: 1}}
+                        transition={{ duration: 2}}
+                    >
+                        Congratulations!
+                    </motion.h2>
+                    <motion.h3
+                        initial={{ color: 'black'}}
+                        animate={{ color: 'orchid'}}
+                        transition={{ delay: 2.2}}
+                    >
+                        You won 10% off original prize
+                    </motion.h3>
                     <p>Book your visit now to take part of the deal or enter your email below and we will send you the offer!</p>
                 </section>  
                 <form>
@@ -43,11 +55,6 @@ function ModalPrize() {
                 
                 </form>
                 <section className='modal__button--container'>
-                    {/* <Button 
-                        className={style.__defaultButton}
-                        title='Send me the deal' 
-                        action={setShowModal}  
-                    /> */}
                     <motion.button 
                         initial={{ scale: 1}}
                         whileHover={{ scale: 1.2, cursor: 'pointer', boxShadow: '0 0 8px black'}}

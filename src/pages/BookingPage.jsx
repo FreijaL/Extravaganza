@@ -8,6 +8,11 @@ import Button from '../components/Button';
 import { Wheel } from 'react-custom-roulette';
 import style from './BookingPage.scss';
 
+
+// Jag har inte kopplat ihop hjulets svar med modalens.
+// Just nu är allt tidsinställt, dvs modalen kommer upp med efter 11 sek.
+
+
 function BookingPage() {
     const navigate = useNavigate();
 
